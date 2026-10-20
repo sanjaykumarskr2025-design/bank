@@ -1,0 +1,36 @@
+{
+  "name": "rebank-account-recovery",
+  "version": "1.0.0",
+  "description": "ReBank - Bank Account Recovery Platform Prototype",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node tests/api.test.js",
+    "seed": "node src/db/seed.js",
+    "prisma:generate": "prisma generate",
+    "prisma:validate": "prisma validate"
+  },
+  "keywords": [
+    "banking",
+    "account-recovery",
+    "cbs",
+    "kyc",
+    "four-eyes-principle"
+  ],
+  "author": "ReBank Engineering",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.4.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^7.10.1",
+    "prisma": "^7.10.1"
+  }
+}
